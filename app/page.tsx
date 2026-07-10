@@ -1,9 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { ArrowRight, Sparkles, Shield, Users, CalendarDays, BarChart, LayoutDashboard } from 'lucide-react';
+import { ArrowRight, Sparkles, Shield, CalendarDays, BarChart } from 'lucide-react';
 
 const features = [
   { title: 'AI content generation', description: 'Create posts, captions, replies, and video scripts with brand memory.', icon: Sparkles },
@@ -72,12 +71,12 @@ export default function HomePage() {
               Create posts, images, captions, content ideas, and social campaigns for your business in minutes.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Link href="/signup" className="inline-flex items-center justify-center rounded-full bg-sky-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-sky-500/20 transition hover:bg-sky-300">
-                Start Free
+              <Link href="/terms-of-service" className="inline-flex items-center justify-center rounded-full bg-sky-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-sky-500/20 transition hover:bg-sky-300">
+                Terms of Service
               </Link>
-              <a href="#how-it-works" className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-slate-500/60">
-                See How It Works
-              </a>
+              <Link href="/privacy-policy" className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-slate-500/60">
+                Privacy Policy
+              </Link>
             </div>
           </div>
           <div className="relative overflow-hidden rounded-[2rem] border border-slate-800 bg-slate-950/80 p-6 shadow-glow">
@@ -225,10 +224,6 @@ export default function HomePage() {
 
       <section className="mt-24 mx-auto max-w-7xl py-12 text-center text-slate-300">
         <h2 className="text-3xl font-semibold text-white">A modern AI marketing platform built for brands, apps, and creators.</h2>
-        <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
-          <Link href="/pricing" className="rounded-full bg-sky-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-sky-300">View Pricing</Link>
-          <Link href="/signup" className="rounded-full border border-slate-700 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-slate-500">Create account</Link>
-        </div>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-400">
           <Link href="/terms-of-service" className="transition hover:text-slate-200">Terms of Service</Link>
           <Link href="/privacy-policy" className="transition hover:text-slate-200">Privacy Policy</Link>
