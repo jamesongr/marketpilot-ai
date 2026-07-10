@@ -3,26 +3,15 @@ const nextConfig = {
   experimental: {
     typedRoutes: true
   },
+  output: 'export',
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
         hostname: '**'
       }
     ]
-  },
-  async headers() {
-    return [
-      {
-        source: '/:path*',
-        headers: [
-          {
-            key: 'Cross-Origin-Opener-Policy',
-            value: 'same-origin-allow-popups'
-          }
-        ]
-      }
-    ];
   }
 };
 

@@ -1,0 +1,10 @@
+name = "amplifyai"
+compatibility_date = "2025-01-01"
+main = "workers-site/index.js"
+site = { bucket = "./out" }
+
+[build]
+command = "npm run build"
+
+[vars]
+# Add any Cloudflare Worker environment variables here if needed
