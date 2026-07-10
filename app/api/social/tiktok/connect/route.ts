@@ -10,7 +10,7 @@ export async function GET() {
   const returnUrl = process.env.TIKTOK_REDIRECT_URI || '/social-accounts';
 
   const builtUrl = clientId && redirectUri
-    ? `https://www.tiktok.com/v2/auth/authorize?client_key=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&scope=user.info.basic%20video.list%20video.upload&state=marketpilot-tiktok`
+    ? `https://www.tiktok.com/v2/auth/authorize?client_key=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&scope=user.info.basic%20video.list%20video.upload&state=amplify-tiktok`
     : undefined;
 
   if (authUrl || builtUrl) {

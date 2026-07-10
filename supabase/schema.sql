@@ -1,4 +1,4 @@
--- Supabase schema definitions for MarketPilot AI
+-- Supabase schema definitions for Amplify AI
 
 create table public.users (
   id uuid primary key default uuid_generate_v4(),

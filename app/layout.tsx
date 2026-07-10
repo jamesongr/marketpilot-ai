@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'MarketPilot AI',
+  title: 'Amplify AI',
   description: 'AI marketing platform for creators, brands, and apps.',
   icons: {
     icon: '/favicon.ico'

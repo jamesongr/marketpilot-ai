@@ -35,7 +35,7 @@ export default function SignUpPage() {
         <div className="space-y-3 text-center">
           <p className="text-sm uppercase tracking-[0.3em] text-sky-300">Create account</p>
           <h1 className="text-3xl font-semibold text-white">Start with Google</h1>
-          <p className="text-slate-400">Create your MarketPilot AI workspace using Firebase Google authentication.</p>
+          <p className="text-slate-400">Create your Amplify AI workspace using Firebase Google authentication.</p>
         </div>
         <div className="mt-8 space-y-5">
           <button type="button" onClick={handleGoogleSignUp} className="flex w-full items-center justify-center gap-3 rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-slate-100">

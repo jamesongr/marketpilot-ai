@@ -10,7 +10,7 @@ export async function GET() {
   const returnUrl = process.env.FACEBOOK_REDIRECT_URI || '/social-accounts';
 
   const builtUrl = clientId && redirectUri
-    ? `https://www.facebook.com/v17.0/dialog/oauth?client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&state=marketpilot-facebook&scope=pages_show_list,pages_read_engagement,pages_manage_posts,pages_manage_engagement,email`
+    ? `https://www.facebook.com/v17.0/dialog/oauth?client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&state=amplify-facebook&scope=pages_show_list,pages_read_engagement,pages_manage_posts,pages_manage_engagement,email`
     : undefined;
 
   if (authUrl || builtUrl) {

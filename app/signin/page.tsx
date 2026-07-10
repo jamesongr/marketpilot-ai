@@ -34,7 +34,7 @@ export default function SignInPage() {
       <div className="mx-auto max-w-md rounded-[2rem] border border-slate-800 bg-slate-950/90 p-8 shadow-glow">
         <div className="space-y-3 text-center">
           <p className="text-sm uppercase tracking-[0.3em] text-sky-300">Sign in</p>
-          <h1 className="text-3xl font-semibold text-white">Welcome to MarketPilot AI</h1>
+          <h1 className="text-3xl font-semibold text-white">Welcome to Amplify AI</h1>
           <p className="text-slate-400">Sign in with Google to access your brands, content studio, and social dashboard.</p>
         </div>
         <div className="mt-8 space-y-5">

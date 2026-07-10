@@ -19,7 +19,7 @@ export default function ContentStudioPage() {
     event.preventDefault();
     setStatus('Generating content...');
     const generated = await generateSocialPost({
-      brandName: brands.find((item) => item.id === form.brand)?.name || 'MarketPilot',
+      brandName: brands.find((item) => item.id === form.brand)?.name || 'Amplify',
       platform: form.platform,
       goal: form.goal,
       topic: form.topic,

@@ -22,7 +22,7 @@ export default function DashboardShell({ children, title }: { children: React.Re
           <div className="flex items-center gap-3 rounded-3xl bg-slate-950/95 px-4 py-4 ring-1 ring-slate-700/60">
             <div className="flex h-12 w-12 items-center justify-center rounded-3xl bg-sky-400/10 text-sky-300">M</div>
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-sky-300">MarketPilot AI</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-sky-300">Amplify AI</p>
               <p className="text-sm text-slate-300">Brand manager</p>
             </div>
           </div>

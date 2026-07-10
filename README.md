@@ -1,4 +1,4 @@
-# MarketPilot AI
+# Amplify AI
 
 A dark-mode-first AI marketing SaaS prototype built with Next.js, TypeScript, Tailwind CSS, and Supabase-ready architecture.
 

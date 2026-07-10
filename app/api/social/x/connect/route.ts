@@ -10,7 +10,7 @@ export async function GET() {
   const returnUrl = process.env.X_REDIRECT_URI || '/social-accounts';
 
   const builtUrl = clientId && redirectUri
-    ? `https://twitter.com/i/oauth2/authorize?response_type=code&client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=tweet.read%20tweet.write%20users.read%20offline.access&state=marketpilot-x&code_challenge=challenge&code_challenge_method=plain`
+    ? `https://twitter.com/i/oauth2/authorize?response_type=code&client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=tweet.read%20tweet.write%20users.read%20offline.access&state=amplify-x&code_challenge=challenge&code_challenge_method=plain`
     : undefined;
 
   if (authUrl || builtUrl) {

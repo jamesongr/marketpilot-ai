@@ -10,7 +10,7 @@ export async function GET() {
   const returnUrl = process.env.LINKEDIN_REDIRECT_URI || '/social-accounts';
 
   const builtUrl = clientId && redirectUri
-    ? `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=r_liteprofile%20r_emailaddress%20w_member_social&state=marketpilot-linkedin`
+    ? `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=r_liteprofile%20r_emailaddress%20w_member_social&state=amplify-linkedin`
     : undefined;
 
   if (authUrl || builtUrl) {
