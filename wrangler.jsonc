@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ai",
+  "compatibility_date": "2025-01-01",
+  "main": "workers-site/index.js",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "single-page-application"
+  },
+  "build": {
+    "command": "npm run build"
+  }
+}
